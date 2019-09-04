@@ -6,3 +6,12 @@
 
 - Java
 - maven
+
+### Development
+
+```
+$git clone https://github.com/HelpControl/hc-xslt-api
+
+$cd ./hc-xslt-api/server
+$mvn compile
+```
