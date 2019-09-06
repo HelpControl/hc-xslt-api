@@ -1,8 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    XSLT Online
-  </h1>
-</div>
+  <mat-toolbar color="primary">
+    <h1>XSLT Online</h1>
+    <span class="hc-spacer"></span>
+    <a mat-button color="accent" [matMenuTriggerFor]="menu">About</a>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>info</mat-icon><span>System</span>
+      </button>
+      <mat-divider></mat-divider>
+      <button mat-menu-item>
+        <mat-icon>supervisor_account</mat-icon>
+        <span>Authors</span>
+      </button>
+      <mat-divider></mat-divider>
+    </mat-menu>
+  </mat-toolbar>
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
